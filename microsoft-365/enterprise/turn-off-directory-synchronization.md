@@ -3,7 +3,7 @@ title: "Turn off directory synchronization for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/30/2023
+ms.date: 12/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -34,9 +34,9 @@ You can use PowerShell to turn off directory synchronization and convert your sy
 ## Turn off directory synchronization  
 To turn off Directory synchronization:
   
-1. First, install the Microsoft Graph PowerShell SDK. For instructions, see [Install the Microsoft Graph PowerShell SDK](https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0).
+1. First, install the Microsoft Graph PowerShell SDK. For instructions, see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation).
     
-2. Use [Update-MgBetaOrganization](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization?view=graph-powershell-beta) to disable directory synchronization: 
+2. Use [Update-MgBetaOrganization](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization) to disable directory synchronization: 
     
   ```powershell
 $OrgID = (Get-MgOrganization).id
